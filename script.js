@@ -12,11 +12,16 @@ function generatePassword() {
     console.log(length)
         // write an if statement to check if length is less than 8 OR is greater than 128.
         // if not, call on generate password fuction
+    if (length < 8 || length > 128) {
+        window.alert("Your password must have a length of at least 8 characters and no more than 128 characters.");
+        return generatePassword();
+    }
     var upperCase = window.confirm("Do you want to use uppercase characters?")
     var lowerCase = window.confirm("Do you want to use lowercase characters?")
     var numerical = window.confirm("Do you want to use numerical characters?")
-    var special = window.confirm("Do you want to use special characters?")
+    var special = window.confirm("Do you want to use special characters? ")
         //write an if statement to check if the previous variables are all falsey if they are then call on generate password function again
+
 }
 
 
