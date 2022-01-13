@@ -41,8 +41,9 @@ function generatePassword() {
 
 function random_item(items) {
     return items[Math.floor(Math.random() * items.length)];
+} {
+    for (let i = 0; i < upperCaseArray.length; i++);
 }
-for (let i = 0; i < random_item.length; i++);
 
 var items = ["upperCaseArray", "lowerCaseArray", "numbersArray", "specialCharactersArray"];
 console.log(random_item(items));
