@@ -28,13 +28,10 @@ for (var i = 0; i < length; i++) {
     randomSym+=symArray[Math.floor(Math.random()* symArray.length)]
 }
 
-if (length > 8 && length < 128){
+if (length < 8 && length > 128){
     if (isLower===true && isUpper===true){}
    
-} else { 
-    var length = parseInt(window.prompt("Your password must contain atleast 8 characters and no more than 128 characters."))
-    
-}
+} else alert("Your password must be at least 8 characters and no more than 128 characters.");
 // random=randomLower+randomUpper+randomNumber+randomSym
 // console.log(random)
 
