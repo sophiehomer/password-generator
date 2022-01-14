@@ -71,3 +71,12 @@ function writePassword() {
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
+
+
+
+
+
+if(length < 8 || length > 128)
+alert("Your password must be atleast 8 characters and no more than 128 characters.")
+{}
+
