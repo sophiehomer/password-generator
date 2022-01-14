@@ -28,17 +28,18 @@ for (var i = 0; i < length; i++) {
     randomSym+=symArray[Math.floor(Math.random()* symArray.length)]
 }
 
-if (length < 8 && length > 128){
-    if (isLower===true && isUpper===true){}
+if (length < 8 && length > 128){}
+    // if (isLower===true && isUpper===true){}
    
-} else alert("Your password must be at least 8 characters and no more than 128 characters.");
-// random=randomLower+randomUpper+randomNumber+randomSym
-// console.log(random)
+if (length < 8 && length < 128)
+alert("Your password must be at least 8 characters and no more than 128 characters.");
+(window.prompt("What is the length of your desired password?"))
 
 // 4 selections
 if (isLower && isUpper && isNumeric && isSym){
     random = randomLower + randomUpper + randomNumber + randomSym
 }
+
 // 3 selections
 else if (isUpper && isLower && isNumeric){
         random = randomUpper + randomLower + randomUpper
