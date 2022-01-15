@@ -15,6 +15,13 @@ var generateBtn = document.querySelector("#generate");
 
 function generatePassword() {
     var length = parseInt(window.prompt("What is the length of your desired password?"))
+    if (length < 8 && length > 128){}
+    // if (isLower===true && isUpper===true){}
+   
+else (length < 8 && length < 128)
+alert("Your password must be at least 8 characters and no more than 128 characters.");
+(window.prompt("What is the length of your desired password?"))
+
     var isLower = window.confirm("Would you like to use lower case letters?")
     var isUpper = window.confirm("Would you like to use upper case letters?")
     var isNumeric = window.confirm("Would you like to use numbers?") 
@@ -28,12 +35,6 @@ for (var i = 0; i < length; i++) {
     randomSym+=symArray[Math.floor(Math.random()* symArray.length)]
 }
 
-if (length < 8 && length > 128){}
-    // if (isLower===true && isUpper===true){}
-   
-if (length < 8 && length < 128)
-alert("Your password must be at least 8 characters and no more than 128 characters.");
-(window.prompt("What is the length of your desired password?"))
 
 // 4 selections
 if (isLower && isUpper && isNumeric && isSym){
