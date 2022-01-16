@@ -17,7 +17,7 @@ function generatePassword() {
     var length = parseInt(window.prompt("What is the length of your desired password?"))
     if (length < 8 || length > 128){
         alert("Your password must be at least 8 characters and no more than 128 characters.");
-        generatePassword()
+        return generatePassword()
 }   
    
 else (length > 8 && length < 128)
