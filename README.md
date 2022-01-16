@@ -9,5 +9,6 @@ CSS
 Javascript
 
 ### Website
+https://sophiehomer.github.io/password-generator/
 
 #### ©️2022 Sophie Homer
